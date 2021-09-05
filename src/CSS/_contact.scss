@@ -1,0 +1,57 @@
+form{
+    padding: 39vw 0 0 0;
+    display: flex;
+    flex-direction: column;
+    // color: rgb(158, 52, 52);
+
+    input{
+        position: relative;
+        margin: 0 auto 0 auto;
+        background: rgb(63, 55, 55);
+        border: none;
+        color: white;
+        font-size: 2vw;
+
+        //adding padding to left then removing it from width keeps it centered and buffers the input's placeholder text;
+        // padding-left: 1vw;
+        // width: 69vw;
+
+        padding-left: 5vw;
+        width: 75vw;
+        height: 8vw;
+    }
+
+    button{
+        margin: 20vw auto 10vw auto;
+        width: 80vw;
+    }
+
+    #email-message{
+        height: 30vw;
+    }
+
+    div{
+        z-index: 1;
+        font-size: 3.3vw;
+        margin: -6vw auto 10vw 15vw;
+        color: grey;
+        height: 1vw;
+
+        pointer-events: none;
+        transition: all 0.3s;
+    }
+
+    #emailMessagePlaceholder{
+        margin-top: -28vw;
+    }
+
+    input:focus{
+        outline: none;
+    }
+
+    input:focus + div, input:not(:placeholder-shown) + div{
+        transform: translateY(-5.6vw);
+        font-size: 3vw;
+        color: white;
+    }
+}

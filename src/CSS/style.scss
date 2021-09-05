@@ -1,0 +1,749 @@
+@import "./_universal";
+@import "./_book";
+@import "./_contact";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+//currently only 400 weight is used
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+// @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap'); 
+//now unused (I think [above] [is commented out])
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Limelight&display=swap');
+
+#top-section{
+
+    margin: 5vh 1vw 0 1vw;
+
+    background: rgb(53, 51, 51);
+    border-radius: 6px;
+    padding-bottom: 10px;
+
+    #text-container{
+        margin: 5vh 0 30px 5vw;
+        padding-top: 10px;
+        overflow: visible;
+
+        h2{
+            font-family: 'Rokkitt', serif;
+            font-weight: 400;
+            color:  rgb(235, 193, 131);
+            font-size: 3.7vw;
+        }
+
+        h1{
+            position: relative;
+            z-index: 1;
+            color: white;
+            font-size: 7vw;
+        }
+    }
+
+    #image-container{
+
+        text-align: center;
+        
+        img{
+            width: 90vw;
+            border-radius: 7px;
+        }
+    }
+}
+
+#card-container-section{
+    margin-top: 20vw;
+    background: rgb(50, 50, 51);
+}
+
+#cards-container{
+    margin: 0vw auto 0 auto; //removed 15vw added top margin here
+    padding: 7vw 0;
+    text-align: center;
+    width: 80vw;
+    // background: rgb(57, 58, 59);
+    border-radius: 5px;
+    .card{
+        overflow-x: hidden; //look back at this to see if it should be removed and certian @keyframe width's custimized (issue caused by removan *{overflow-x: hidden})
+        .card-svg-container{
+            // i{
+            //     color: rgb(255,175,61);
+            //     font-size: 13vw;
+            // }
+
+            //FILL WITH IDS
+
+            img{
+                margin: 10vw 10vw auto auto;
+                width: 30vw;
+            }
+        }
+
+        .text-container{
+            overflow: hidden; //removed (minor) scroll on text
+            h2{
+                font-family: 'Roboto', sans-serif;
+                margin: 0 26vw 0 auto;
+                width: 40vw;
+                height: auto;
+                font-size: 5vw;
+                color: white;
+                font-weight: 500;
+
+                text-align: left;
+            }
+
+            p{
+                font-family: 'Open Sans', sans-serif;
+                margin: 1vw auto 0 auto;
+                // color: rgb(219, 218, 214);
+                color: white;
+                width: 52vw;
+                font-size: 4vw;
+                font-weight: 400;
+                line-height: 1.2em;
+
+                text-align: left;
+            }
+        }
+    }
+
+    .middle-card{
+        margin: 15vw auto 15vw auto;
+    }
+}
+
+.second-section-container{
+
+    margin-bottom: 10vw;
+
+    .second-text-section{
+
+        margin: 10vw 0 0 0;
+
+        h2{
+            // font-family: 'Pattaya', sans-serif;
+            font-family: 'Mate SC', serif;
+            font-weight: 400;
+            color: white;
+            margin: 20px 0 0 10vw;
+            font-size: 6vw;
+        }
+        p, h3{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            color: white;
+            margin: 20px 0 0 10vw;
+            width: 80vw;
+            font-size: 4vw;
+        }
+
+        .follow-up-button{
+
+            position: relative;
+            overflow: hidden;
+
+            color: rgb(248, 240, 229);
+            text-align: center;
+            font-family: 'Limelight', cursive;
+            font-size: 6vw;
+            width: 35vw;
+            border: 1px solid rgb(190, 133, 58);
+
+            padding: 3px 0;
+            border-radius: 1px;
+
+            transition: all .4s;
+        }
+    }
+
+    .second-image-container{
+        margin: 10vh auto 0 auto;
+        overflow-y: hidden;
+        direction: rtl;
+        width: 90vw;
+        border-radius: 10px;
+        img{
+            width: 90vw;
+            border-radius: 10px;
+        }
+    }
+
+    #lodge-picture{
+        height: 56vw;
+    }
+
+    #unique-picture{
+        height: 41vw;
+
+        img{
+            width: 100vw;
+        }
+    }
+
+    #amenaties-picture{
+        height: 50vw;
+    }
+}
+
+#quote-section{
+    // display: flex;
+    margin: 0 auto;
+    width: 90vw;
+    height: 50vw;
+    background: rgb(53, 51, 51);
+
+    #quote-container{
+        padding-top: 5vw;
+
+        margin: 0 0 5vw auto;
+        text-align: center;
+
+        h2{
+            font-family: 'Pattaya', sans-serif;
+            font-weight: 400;
+            margin: 0 auto;
+            color: rgb(247, 180, 104);
+            width: 70vw;
+            font-size: 8vw;
+            text-align: left;
+        }
+
+        span {
+            color: white;
+        }
+    }
+
+    #comment-container{
+
+        margin: 0 auto;
+        text-align: center;
+
+        p{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            margin: 0 auto;
+            color: white;
+            width: 70vw;
+            font-size: 3.8vw;
+            text-align: left;
+        }
+    }
+
+    // #quote-container{
+
+    //     margin: 6vw 0 0 10vw;
+
+    //     h2{
+    //         color: white;
+    //         width: 18vw;
+    //         font-size: 2vw;
+    //     }
+    // }
+
+    // #comment-container{
+
+    //     margin: 6vw 10vw 0 auto;
+
+    //     h3{
+    //         color: white;
+    //         width: 35vw;
+    //         font-size: 1.4vw;
+    //     }
+    // }
+}
+
+#order-section{
+    margin: 15vw auto 0 auto;
+    width: 90vw;
+    height: 80vw;
+    background: rgb(53, 51, 51);
+}
+
+@media screen and (min-width: 700px){ //was 600px
+
+    .second-section-container{
+        .second-text-section{
+            .follow-up-button{
+                font-size: 5vw;
+                width: 30vw;
+            }
+        }
+    }
+
+    #card-container-section{
+        margin-top: 10vw;
+    }
+
+    #cards-container{
+        display: flex;
+        justify-content: center;
+        width: auto;
+
+        margin-top: 10vw;
+
+        .card{
+            margin: 0 0 0 5vw;
+            .text-container{
+
+                h2{
+                    // width: auto;
+                    // height: auto;
+
+                    font-size: 4vw;
+                    width: 30vw;
+                }
+
+                p{
+                    width: 30vw;
+                    font-size: 2.7vw;
+                }
+            }
+
+            .card-svg-container{
+                img{
+                    width: 20vw;
+                }
+            }
+        }
+    }
+
+    // #quote-section{
+    //     height: 28vw;
+    // }
+
+    // #order-section{
+    //     height: 70vw;
+    // }
+}
+
+@media screen and (min-width: 900px){
+
+    #top-section{
+        padding-bottom: 2vw;
+    }
+
+    #cards-container{
+
+        margin-top: 5vw;
+        padding: 4vw 0;
+
+        .card{
+
+            margin: 0 0 0 3vw;
+
+            .card-svg-container{
+                // i{
+                //     font-size: 8.5vw;
+                // }
+
+                //FILL WITH IDS
+
+                img{
+                    width: 15vw;
+                }
+            }
+
+            .text-container{
+                h2{
+                    margin: 2vw 0 0 0;
+                    width: 20vw;
+                    font-size: 3vw;
+                }
+
+                p{
+                    width: 25vw;
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+
+    .second-section-container{
+        display: grid;
+        grid-template-columns: 48vw 48vw;
+
+        margin-top: 10vw;
+        
+        .second-image-container{
+            margin: 0 1vw 0 1vw; //revisit b/c of top margin //changed
+            width: 50vw;
+        } 
+
+        #lodge-picture{
+            height: 40vw;
+            img{
+                width: 70vw;
+            }
+        }
+
+        #amenaties-picture{
+            height: 37vw;
+            img{
+                width: 70vw;
+            }
+        }
+
+        .second-text-section{
+
+            margin: 0;
+            
+            h2{
+                margin: 0vw 0 0 8vw; //maybe fix //changed
+                font-size: 4vw;
+            }
+            p, h3{
+                margin: 7vw 0 0 8vw;
+                margin-top: 50px;
+                width: 40vw;
+                font-size: 3vw;
+            }
+
+            .follow-up-button{
+                margin-top: 3vw;
+
+                font-size: 2.6vw; 
+                width: 17vw;
+            }
+        }
+    }  
+
+    .second-section-container:nth-child(even){
+        .second-image-container{
+            order: 2;
+        }
+    }
+
+    #quote-section{
+        height: 32vw;
+
+        display: flex;
+
+        #quote-container{
+            padding: 0;
+            margin: 9vw 0 0 5vw;
+
+            h2{
+                width: 35vw;
+                font-size: 4vw;
+            }
+        }
+
+        #comment-container{
+            margin: 9vw 6vw 0 auto;
+
+            p{
+                width: 35vw;
+                font-size: 2.6vw;
+            }
+        }
+
+        #divider{
+            margin: auto 0 auto 4vw;
+            height: 12vw;
+            width: 0.3vw;
+            background: white;
+            border-radius: 0.1vw;
+        }
+    }
+
+    #order-section{
+        height: 60vw;
+    }
+}
+
+@media screen and (min-width: 1250px){
+
+    #cards-container{
+
+        margin-bottom: 5vw;
+        
+        .card{
+
+            .card-svg-container{
+
+                img{
+                    margin: 0 16vw 0 0;
+                    width: 10vw;
+                }
+            }
+
+            .text-container{
+                h2{
+                    margin-top: 0.5vw;
+                    width: 15vw;
+                    font-size: 2.6vw;
+                }
+            }
+        }
+    }
+
+    .second-section-container{
+
+        margin-bottom: 0vw;
+
+        .second-text-section{
+    
+            h2{
+                margin: 3vw 0 0 13vw; //revisit
+                font-size: 3vw;
+            }
+            p, h3{
+                margin: 2vw 0 0 13vw;
+                font-size: 2vw;
+                width: 30vw;
+            }
+
+                .follow-up-button{
+                    z-index: 0;
+                    font-size: 2.2vw; 
+                    width: 14vw;
+
+                    div{
+                        z-index: -1;
+                        position: absolute;
+                        width: inherit;
+                        height: 3.6vw;
+                        background: rgb(190, 133, 58);
+                        pointer-events: none;
+        
+                        transform: translateY(7%);
+        
+                        transition: all .4s;
+                    }
+                }
+
+                .follow-up-button:hover{
+                    border-radius: 2px;
+                    div{
+                        transform: translateY(-92%);
+                        border-radius: 2px;
+                    }
+                }
+        }
+    
+        .second-image-container{
+            margin: 0 0vw 0vw 5vw; //revist
+            // width: 55vw;
+            // height: 50vw;
+            // img{
+            //     width: 5vw;
+            // }
+        }
+    
+        #lodge-picture{
+            height: 33.6vw;
+        }
+    
+        #unique-picture{
+            height: 25.2vw;
+            width: 40vw;
+            overflow: hidden;
+            height: 27vw;
+    
+            img{
+                width: 65vw;
+            }
+        }
+    
+        #amenaties-picture{
+            height: 28vw;
+
+            img{
+                width: 50vw;
+            }
+        }
+    }
+
+    #quote-section{
+        margin-top: 5vw;
+        height: 17vw;
+
+        #quote-container{
+            margin: 5vw 0 0 10vw;
+
+            h2{
+                width: 26vw;
+                font-size: 2.8vw;
+            }
+        }
+
+        #comment-container{
+            margin-top: 5vw;
+
+            p{
+                font-size: 2vw;
+            }
+        }
+    }
+
+    #order-section{
+        margin-top: 6vw;
+        height: 45vw;
+    }
+}
+
+@media screen and (min-width: 1500px){
+
+    
+
+    #top-section{   
+        margin: 5vh 2.4vw 3vw 4vw;
+        overflow: hidden;
+        #image-container {
+            text-align: left;
+            img{
+                position: relative;
+                z-index: 1;
+                margin-left: 5vw;
+                width: 70vw;
+            }
+        }
+        #text-container{
+            h2{
+                font-size: 2vw;
+            }
+            h1{
+                font-size: 4vw;
+            }
+        }
+
+        position: relative;
+        //height: calc(48.07vw + 12vh);
+        overflow: hidden;
+        .streak{
+            transform: rotate(-50deg);
+            top: 27vw;
+            left: 8vw;
+            position: absolute;
+            width: 85vw;
+            height: 3.3vw;
+            background: rgb(71, 71, 71);
+
+        }
+
+        .secondStreak{
+            left: 15vw;
+        }
+
+        .streakReverse{
+            transform: rotate(70deg);
+            top: 27vw;
+            left: 20vw;
+            position: absolute;
+            width: 85vw;
+            height: 3.6vw;
+            background: rgb(63, 63, 66);
+
+        }
+
+        .secondReverseStreak{
+            left: 13vw;
+        }
+    }
+
+
+    #card-container-section{
+        margin-top: 7vw;
+    }
+
+    #cards-container{
+        
+        margin: 0 13vw;
+
+        .card{
+            .card-svg-container{
+                // i{
+                //     font-size: 6vw;
+                // }
+
+                //FILL WITH IDS
+                
+                margin-left: 2.5vw;
+
+                img{
+                    width: 7.5vw;
+                }
+            }
+
+            .text-container{
+
+                h2{
+                    font-size: 2.2vw;
+                    margin-left: 2.5vw;
+                }
+
+                p{
+                    font-size: 1.3vw;
+                    width: 17vw;
+                }
+            }
+        }
+    }
+
+    .second-section-container{
+
+        margin-top: 5vw;
+
+        .second-text-section{
+
+            h2{
+                margin: 3vw 0 0 12vw; //new and revisit more
+                font-size: 2.65vw;
+            }
+            p, h3{
+                margin: 2vw 0 0 12vw; //same
+                font-size: 1.7vw;
+                width: 30vw;
+            }
+
+            // width: 35vw;
+            .follow-up-button{
+                width: 12vw;
+                // margin-top: 3vw;
+                font-size: 1.95vw; //was 2.00vw
+                // overflow: hidden;
+                div{
+                    width: 12vw;
+                    height: 3.05vw;
+                }
+            }
+        }
+
+        .second-image-container{
+            margin: 0 5vw 3vw 5vw; //revist
+            width: 45vw;
+            // margin: 0 0 0 7vw;
+        }
+
+        #lodge-picture{
+            height: 26vw;
+            width: 45vw;
+
+            img{
+                // margin-top: -12vw;
+                width: 50vw;
+            }
+        }
+    
+        #unique-picture{
+            margin: 0 0 0 1vw;
+            // height: 25.2vw;
+            width: 45vw;
+        }
+    }
+
+    #quote-section{
+        margin-top: 2vw;
+        // height: 17vw;
+
+        #comment-container{
+            p{
+                font-size: 1.8vw;
+            }
+        }
+    }
+
+    #order-section{
+        height: 40vw;
+    }
+}

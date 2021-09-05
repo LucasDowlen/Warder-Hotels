@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    //overflow-x: hidden;
+    user-select: none;
+    cursor: default;
+}
+
+body{
+    overflow-x: hidden;
+    background: rgb(39,39,37);
+}
+
+nav{
+    z-index: 2;
+    width: 100vw;
+    position: fixed;
+    background: rgb(39,39,37);
+    padding: 0 0 10px 0;
+    ul{
+        margin: 10px 30px 0 40px;
+        height: 35px;
+        display: flex;
+        flex-direction: row-reverse;
+
+        //replace li with a class that will be on the new link tags then replace most nested div(i think) with the class for the new Link
+        li{
+            color: white;
+            margin: 0 10px;
+            padding: 8px 10px 0px 10px;
+            animation-fill-mode: forwards;
+            //overflow: hidden;
+
+            a{
+                color: white;
+            }
+
+            div {
+                overflow: hidden;
+                div{
+                    height: 3px;
+                    background: rgb(104, 66, 16);
+                    border-radius: 2px;
+    
+                    transform: translateX(-101%);
+                    transition: all ease .4s;
+                }
+            }
+        }
+
+        li:hover div div{
+            transform: translateX(0%);
+        }
+
+        .first{
+            font-family: 'Mate SC', serif;
+            margin: -5px auto 0 0;
+            font-size: 23px;
+            font-weight: 700;
+        }
+
+        .brown-button{
+            background: rgb(165, 112, 42);
+        }
+    }
+}
+
+// #footer{
+
+    // margin-top: 5vw;
+    // padding: 1vw;
+    // background: rgb(51,51,51);
+    footer{
+
+        margin-top: 5vw;
+        padding: 1vw;
+        background: rgb(51,51,51);
+
+        ul{
+            display: flex;
+
+            justify-content: center;
+
+            #firstInFooter{
+                margin: 0 15vw 0 0;
+            }
+
+            li{
+                color: white;
+                margin: 0 2vw;
+            }
+        }
+    }
+// }
+
+@media screen and (min-width: 900px) {
+    footer{
+        ul{
+            #firstInFooter{
+                margin: 0 40vw 0 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1250px){
+    nav{
+        ul{
+            margin: 10px 5vw 0 4.5vw;
+        }
+    }
+
+    footer{
+        ul{
+            #firstInFooter{
+                margin: 0 50vw 0 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1500px){
+    nav{
+        ul{
+            margin: 10px 5vw 0 8vw;
+        }
+    }
+
+    footer{
+        ul{
+            #firstInFooter{
+                margin: 0 60vw 0 0;
+            }
+        }
+    }
+}
