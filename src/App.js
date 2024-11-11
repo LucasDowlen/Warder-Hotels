@@ -16,7 +16,7 @@ import map from './photos/map_freePik.png';
 
 //make nav buttons click-area the whole button (not just the text)
 
-//fix graph cuttoff at specific screen witdths due to static font sizing in the state (chart.js)
+//fix graph cutoff at specific screen widths due to static font sizing in the state (chart.js)
 
 //make form with nodemailer (install library too)
 
@@ -58,7 +58,7 @@ function App() {
 
                 <div className="text-container">
                     <h2>
-                        Seamlessly Easy Acess
+                        Seamlessly Easy Access
                     </h2>
 
                     <p>
